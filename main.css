@@ -1,0 +1,118 @@
+:root {
+  --color-card1: hsl(31, 77%, 52%);
+  --color-card2: hsl(184, 100%, 22%);
+  --color-card3: hsl(179, 100%, 13%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card {
+  padding: 25px;
+}
+.card img {
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 25px;
+  line-height: 1.75rem;
+  padding-right: 90px;
+}
+img,
+h1,
+p {
+  padding-left: 40px;
+}
+.orange {
+  background: var(--color-card1);
+  border-radius: 10px 10px 0px 0px;
+}
+.cyan {
+  background: var(--color-card2);
+}
+.dark-cyan {
+  background: var(--color-card3);
+  border-radius: 0px 0px 10px 10px;
+}
+button {
+  margin-bottom: 25px;
+  margin-left: 40px;
+}
+.btn {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 5px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all ease-in-out 0.6s;
+}
+/* First Card Button */
+.orange > button {
+  color: var(--color-card1);
+}
+.orange > button:hover {
+  color: white;
+  background: var(--color-card1);
+}
+/* Second Card Button */
+.cyan > button {
+  color: var(--color-card2);
+}
+.cyan > button:hover {
+  color: white;
+  background: var(--color-card2);
+}
+/* Third Card Button */
+.dark-cyan > button {
+  color: var(--color-card3);
+}
+.dark-cyan > button:hover {
+  color: white;
+  background: var(--color-card3);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 110px;
+    padding-bottom: 100px;
+  }
+  .orange {
+    border-radius: 0;
+  }
+  .dark-cyan {
+    border-radius: 0;
+  }
+  .card p {
+    padding-right: 80px;
+  }
+  .card {
+    height: 500px;
+  }
+}
